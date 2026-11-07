@@ -1,0 +1,104 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background-color: #f8fafc;
+   color: #334155;
+   line-height: 1.5;
+}
+
+.catalog-banner {
+   background-color: #0f172a;
+   color: #f8fafc;
+   padding: 1.5rem 2rem;
+   margin-bottom: 2rem;
+}
+
+.catalog-banner h1 {
+   font-size: 1.5rem;
+   font-weight: 500;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.main-content {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 1.5rem 3rem 1.5rem;
+}
+
+#productsGrid {
+   list-style: none;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+   gap: 1.25rem;
+}
+
+.catalog-item {
+   background: #ffffff;
+   border-radius: 8px;
+   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+   border: 1px solid #e2e8f0;
+   padding: 1rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.item-thumb {
+   width: 100%;
+   height: 200px;
+   object-fit: cover;
+   border-radius: 6px;
+   background-color: #f1f5f9;
+   margin-bottom: 1rem;
+   cursor: pointer;
+}
+
+.item-details {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 0.75krem;
+}
+
+.text-group {
+   display: flex;
+   flex-direction: column;
+}
+
+.item-heading {
+   font-size: 0.95rem;
+   font-weight: 600;
+   color: #1e293b;
+   margin-bottom: 0.15rem;
+}
+
+.item-cost {
+   font-size: 0.9rem;
+   color: #64748b;
+   font-weight: 500;
+}
+
+.cart-action-btn {
+   background-color: #0ea5e9;
+   color: white;
+   border: none;
+   border-radius: 6px;
+   width: 36px;
+   height: 36px;
+   font-size: 1.25rem;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: background-color 0.2s ease;
+}
+
+.cart-action-btn:hover {
+   background-color: #0284c7;
+}
